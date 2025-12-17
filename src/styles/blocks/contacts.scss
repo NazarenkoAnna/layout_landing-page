@@ -4,16 +4,17 @@
 .contacts{
   margin-bottom: 100px;
 
-  @include mixins.onTablet{
+  @include mixins.on-tablet{
     margin-bottom: 150px
   }
 
   &__wrapper{
-    @include mixins.pageGrid;
+    @include mixins.page-grid;
+
     max-width: 280px;
     margin: 0 auto;
 
-    @include mixins.onTablet{
+    @include mixins.on-tablet{
       max-width: 100%;
     }
   }
@@ -21,12 +22,12 @@
     &__right{
       grid-column: 1/-1;
 
-      @include mixins.onTablet{
+      @include mixins.on-tablet{
           grid-column: -4/-1;
           grid-row: 1 / -1;
       }
 
-      @include mixins.onDesktop{
+      @include mixins.on-desktop{
         grid-column: 8/-1;
       }
   }
@@ -35,24 +36,24 @@
       grid-column: 1/-1;
       margin-bottom: 48px;
 
-    @include mixins.onTablet{
+    @include mixins.on-tablet{
       grid-column: span 3;
       margin-bottom: 0;
     }
 
-    @include mixins.onDesktop{
+    @include mixins.on-desktop{
       grid-column: span 6;
       display: grid;
       grid-template-columns: repeat(6, 1fr)
     }
   }
 
-  &__adress:first-of-type{
-    margin-bottom: 48px;
-  }
-
   &__adress{
     grid-column: span 3;
+  }
+
+  &__adress:first-of-type{
+    margin-bottom: 48px;
   }
 
   &__title{

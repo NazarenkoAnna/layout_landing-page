@@ -27,7 +27,7 @@
     font-size: 40px;
     font-weight: 700;
 
-    @include mixins.onTablet{
+    @include mixins.on-tablet{
       font-size: 64px;
     }
   }

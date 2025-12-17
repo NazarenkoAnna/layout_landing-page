@@ -12,7 +12,7 @@
     letter-spacing: -1.5px;
     text-align: center;
 
-    @include mixins.onTablet{
+    @include mixins.on-tablet{
       font-size: 48px;
       margin-bottom: 48px;
     }
@@ -30,7 +30,7 @@
     text-align: center;
     margin-bottom: 32px;
 
-    @include mixins.onTablet{
+    @include mixins.on-tablet{
       margin-bottom: 48px;
     }
   }

@@ -9,7 +9,7 @@
 
   @include mixins.hover(transform, scale(1.2));
 
-  @include mixins.onTablet{
+  @include mixins.on-tablet{
     width: 32px;
     height: 32px;
   }

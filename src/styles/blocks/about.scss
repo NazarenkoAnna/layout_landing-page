@@ -2,16 +2,16 @@
 @use '../utils/variables' as vars;
 
 .about-us{
-  @include mixins.pageGrid;
+  @include mixins.page-grid;
 
   &__title{
     grid-column: 1/-1;
 
-    @include mixins.onTablet{
+    @include mixins.on-tablet{
       grid-column: 1/4;
     }
 
-    @include mixins.onDesktop{
+    @include mixins.on-desktop{
       grid-column: span 5;
     }
   }
@@ -39,11 +39,11 @@
   &__content{
     grid-column: 1/-1;
 
-    @include mixins.onTablet{
+    @include mixins.on-tablet{
       grid-column: 4/7;
     }
 
-    @include mixins.onDesktop{
+    @include mixins.on-desktop{
       grid-column: span 7;
     }
   }

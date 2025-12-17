@@ -8,7 +8,7 @@
   justify-content: space-between;
   align-items: center;
 
-  @include mixins.onTablet{
+  @include mixins.on-tablet{
     padding-top: 50px;
 
   }
@@ -49,7 +49,7 @@
     pointer-events: none;
     visibility: hidden;
 
-    @include mixins.onDesktop{
+    @include mixins.on-desktop{
       display: block;
     }
   }
