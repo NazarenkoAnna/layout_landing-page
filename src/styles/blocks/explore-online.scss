@@ -1,0 +1,62 @@
+@use '../utils/mixins' as mixins;
+@use '../utils/variables' as vars;
+
+.expo{
+  &__items{
+    @include mixins.pageGrid;
+    row-gap: 40px;
+  }
+
+  &__item{
+    position: relative;
+    overflow: hidden;
+    grid-column: 1/-1;
+
+    @include mixins.onTablet{
+      grid-column: 2/-2;
+    }
+
+    @include mixins.onDesktop{
+      grid-column: span 4;
+    }
+  }
+
+  &__photo{
+    width: 100%;
+    object-fit: cover;
+    transition: vars.$effectDuriation;
+  }
+
+  &__link{
+    display: block;
+    text-decoration: none;
+
+    &:hover{
+      .expo__title{
+        color: vars.$red-hover-color;
+      }
+
+      .expo__photo{
+      transform: scale(0.97);
+    }
+    }
+  }
+
+  &__title{
+    margin: 0;
+    margin-block: 24px 8px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.4em;
+    color: vars.$accent-red-color;
+  }
+
+  &__description{
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: center;
+    color: vars.$main-page-text-color;
+  }
+}
