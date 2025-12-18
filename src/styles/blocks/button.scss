@@ -15,6 +15,7 @@
     font-weight: 700;
     line-height: 27px;
     cursor: pointer;
+    transition: vars.$effectDuriation;
 
     &:hover{
       background-color: vars.$red-hover-color;

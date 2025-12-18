@@ -29,6 +29,8 @@
   &__subtitle{
     text-align: center;
     margin-bottom: 32px;
+    max-width: 390px;
+    margin-inline: auto;
 
     @include mixins.on-tablet{
       margin-bottom: 48px;
