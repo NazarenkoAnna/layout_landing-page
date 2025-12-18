@@ -87,6 +87,11 @@
   }
 
   &__form-input{
+    font-family: Cinzel, serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: vars.$main-page-text-color;
     background-color: vars.$light-grey;
     border: none;
     box-sizing: border-box;
